@@ -1,4 +1,4 @@
-package com.api.test;
+package com.payconiq.test;
 
 import org.junit.runner.RunWith;
 
