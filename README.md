@@ -3,20 +3,24 @@
 ## **Overview:**
 In this Project below APIs have been automated from [Restful-booker](https://restful-booker.herokuapp.com/apidoc/index.html).
 
-CREATE - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-CreateBooking
-READ   - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-GetBookings
-UPDATE - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-UpdateBooking
-DELETE - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-DeleteBooking
+**CREATE** - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-CreateBooking
 
-### **Some of the key features of this framework:**
+**READ**   - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-GetBookings
 
-1. It generates Extent report with all the step details. Report will be generated both HTML & PDF file format.
-2. Generates execution logs, with detailed request and response details.
-3. Feature file has examples of reading request details from Scenario and json file
-4. This also has an example to validate response body using json schema and java pojo classes.
-5. Test execution can be triggered form command line. 
-6. Easy integration to CI/CD pipeline.
+**UPDATE** - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-UpdateBooking
 
+**DELETE** - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-DeleteBooking
+
+### **Test Scenarios Automated in Framework**
+
+1. To verify createBooking API Using data table and using Json.
+2. To verify GetBookingIds API
+3. To verify GetBooking API to get details for first booking id retrieved from GetBookingIds
+4. To verify GetBooking API to get details for the range of checkin and checkout dates.
+5. To verify GetBooking API to get details for the FirstName and LastName of the first booking id retrieved from GetBookingIds
+6. To verify PartialUpdateBooking API to update FirstName and LastName
+7. To verify DeleteBooking API for the first booking id retrieved from GetBookingIds.
+8. To verify end to end scenario for CRUD, where a booking is created then updated and finally deleted by API.
 
 ## **Running Test:**
 

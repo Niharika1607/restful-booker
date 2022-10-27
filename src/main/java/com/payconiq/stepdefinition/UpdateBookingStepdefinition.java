@@ -1,7 +1,6 @@
 package com.payconiq.stepdefinition;
 
 import com.payconiq.model.BookingDetailsRequest;
-import com.payconiq.utils.JsonReader;
 import com.payconiq.utils.ResponseHandler;
 import com.payconiq.utils.TestContext;
 import io.cucumber.datatable.DataTable;
@@ -59,18 +58,6 @@ public class UpdateBookingStepdefinition {
         assertNotNull("Booking not created", bookingDetails);
     }
 
-
-    @When("user updates the booking details using data {string} from JSON file {string}")
-    public void userUpdatesTheBookingDetailsUsingDataFromJSONFile(String dataKey, String JSONFile) {
-        context.response = context.requestSetup()
-                .header("Cookie", context.session.get("token").toString())
-                .pathParam("bookingID", context.session.get("bookingID"))
-                .body(JsonReader.getRequestBody(JSONFile, dataKey))
-                .when().put(context.session.get("endpoint") + "/{bookingID}");
-
-        BookingDetailsRequest bookingDetails = ResponseHandler.deserializedResponse(context.response, BookingDetailsRequest.class);
-        assertNotNull("Booking not created", bookingDetails);
-    }
 
     @When("user makes a request to update first name {string} & Last name {string}")
     public void userMakesARequestToUpdateFirstNameLastName(String firstName, String lastName) {
