@@ -7,7 +7,7 @@ In this Project below APIs have been automated from [Restful-booker](https://res
 
 **READ**   - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-GetBookings
 
-**UPDATE** - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-UpdateBooking
+**UPDATE** - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-PartialUpdateBooking
 
 **DELETE** - http://restful-booker.herokuapp.com/apidoc/index.html#api-Booking-DeleteBooking
 

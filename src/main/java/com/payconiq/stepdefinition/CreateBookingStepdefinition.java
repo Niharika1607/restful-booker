@@ -5,10 +5,12 @@ import com.payconiq.utils.JsonReader;
 import com.payconiq.utils.ResponseHandler;
 import com.payconiq.utils.TestContext;
 import io.cucumber.datatable.DataTable;
+
 import io.cucumber.java.en.When;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
+import org.json.simple.JSONObject;
+
 
 import java.util.Map;
 
